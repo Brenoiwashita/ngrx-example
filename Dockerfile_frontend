@@ -1,0 +1,8 @@
+#FROM artifacts.intranet:8083/vivere/nginx_swarm_frontend:1.1.0
+#FROM artifacts.intranet:8083/vivere/nginx_swarm_frontend:2.0.0
+
+FROM artifacts.intranet:8083/vivere/nginx_swarm_frontend:3.1.4
+
+COPY dist/ /var/www
+
+ENTRYPOINT ["/boot.sh"]

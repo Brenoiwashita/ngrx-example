@@ -1,0 +1,59 @@
+{
+  "/estrutura/1.0.0/gruposeconomicos": {
+    "target": "https://viverebrasil.com.br/apiparametrizadorpfdsv/api",
+    "secure": false
+  },
+  "/estrutura/1.0.0/unidadesnegocios": {
+    "target": "https://viverebrasil.com.br/apiparametrizadorpfdsv/api",
+    "secure": false
+  },
+  "/estrutura/1.0.0/gerentescontas": {
+    "target": "https://viverebrasil.com.br/apiparametrizadorpfdsv/api",
+    "secure": false
+  },
+  "/ufs": {
+    "target": "https://viverebrasil.com.br/apiparametrizadorpfdsv/api",
+    "secure": false
+  },
+  "/token_REMOTO": {
+    "target": "https://viverebrasil.com.br/apiparametrizadorpfdsv/api",
+    "secure": false
+  },
+  "/token": {
+    "target": "http://localhost:8280",
+    "secure": false
+  },
+  "/estrutura/1.0.0/gruposeconomicos_LOCAL": {
+    "target": "http://localhost:8090",
+    "secure": false,
+    "pathRewrite": {
+      "^/estrutura/1.0.0": ""
+    }
+  },
+  "/ufs_LOCAL": {
+    "target": "http://localhost:8090",
+    "secure": false
+  },
+  "/graphql": {
+    "target": "http://localhost:8090",
+    "secure": false
+  },
+  "/graphiql": {
+    "target": "http://localhost:8090",
+    "secure": false
+  },
+  "/reports": {
+    "target": "http://localhost:8096",
+    "secure": false
+  },
+  "/ws_rabbitmq": {
+    "target": "ws://localhost:15675",
+    "secure": false,
+    "ws": true
+  },
+  "/ws": {
+    "target": "ws://localhost:9099",
+    "secure": false,
+    "ws": true
+  }
+}

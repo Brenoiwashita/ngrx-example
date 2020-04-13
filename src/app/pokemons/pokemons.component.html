@@ -1,0 +1,16 @@
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 100px; margin-bottom: 100px">
+  <table border="1" cellpadding="15">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Detalhes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{ item?.name }}</td>
+        <td><button (click)="goToDetail(item?.url)">Detalhes</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
